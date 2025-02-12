@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Under Construction</title>
     <style>
-        header{
-            background-color: #451E5D;
+        * {
+            box-sizing: border-box;
             margin: 0;
-            padding: 50px;
+            padding: 0;
         }
         body {
             font-family: 'Times New Roman', Times, serif, sans-serif;
@@ -16,34 +16,53 @@
             background-color: white;
             margin: 0;
         }
-        
+        header {
+            background-color: #451E5D;
+            padding: 40px;
+        }
         .logo {
-            width: 400;
-            height: 400;
+            max-width: 100%;
+            height: auto;
         }
         h1 {
-            font-size: 36px;
+            font-size: 2em;
             color: #333;
+            margin-top: 20px;
         }
         h2 {
-            font-size: 24px;
+            font-size: 1.5em;
             color: #555;
+            margin-top: 10px;
         }
         p {
-            font-size: 18px;
+            font-size: 1em;
             color: #777;
+            margin-top: 15px;
         }
         a {
             color: #007bff;
             text-decoration: none;
         }
+        @media (max-width: 600px) {
+            header {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            p {
+                font-size: 0.9em;
+            }
+        }
     </style>
-    <header>
-        <img class="logo" src="logo.svg" alt="Website Logo" width="500" height="auto">
-        </header>
 </head>
-
 <body>
+    <header>
+        <img class="logo" src="logo.svg" alt="Website Logo">
+    </header>
     <h1>COMING SOON</h1>
     <h1>This Website is Under Construction</h1>
     <h2>Expected Launch Date: February 21, 2025</h2>
